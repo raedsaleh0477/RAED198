@@ -15,6 +15,11 @@ class Category(models.Model):
         verbose_name="تاريخ الإنشاء"
     )
 
+    class Meta:
+        verbose_name = "تصنيف"
+        verbose_name_plural = "التصنيفات"
+        ordering = ['name']
+
     def __str__(self):
         return self.name
 
@@ -51,6 +56,11 @@ class Product(models.Model):
         auto_now_add=True,
         verbose_name="تاريخ الإضافة"
     )
+
+    class Meta:
+        verbose_name = "منتج"
+        verbose_name_plural = "المنتجات"
+        ordering = ['-created_at']
 
     def __str__(self):
         return self.name

@@ -33,6 +33,11 @@ class Order(models.Model):
         verbose_name="تاريخ الطلب"
     )
 
+    class Meta:
+        verbose_name = "طلب"
+        verbose_name_plural = "الطلبات"
+        ordering = ['-created_at']
+
     def __str__(self):
         return f"طلب رقم {self.id}"
 
@@ -59,5 +64,9 @@ class OrderItem(models.Model):
         verbose_name="سعر الوحدة"
     )
 
+    class Meta:
+        verbose_name = "عنصر طلب"
+        verbose_name_plural = "عناصر الطلب"
+
     def __str__(self):
-        return f"{self.product.name} - {self.quantity}"
+        return f"{self.product.name} × {self.quantity}"

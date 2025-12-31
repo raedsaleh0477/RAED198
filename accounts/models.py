@@ -24,5 +24,10 @@ class Customer(models.Model):
         verbose_name="تاريخ الإنشاء"
     )
 
+    class Meta:
+        verbose_name = "عميل"
+        verbose_name_plural = "العملاء"
+        ordering = ['-created_at']
+
     def __str__(self):
-        return self.user.username
+        return f"العميل: {self.user.username}"

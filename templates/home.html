@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ToyLand | متجر ألعاب الأطفال</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <main class="home">
+        <section class="hero">
+            <h1>مرحبًا بك في ToyLand 🎉</h1>
+            <p>أفضل ألعاب الأطفال بألوان مبهجة وجودة عالية</p>
+            <button class="hero-btn">تسوق الآن</button>
+        </section>
+
+        <section class="products">
+            <h2>ألعاب مميزة</h2>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="img-placeholder">🧩</div>
+                    <h3>لعبة تركيب</h3>
+                    <p>50 ريال</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="img-placeholder">🚗</div>
+                    <h3>سيارة أطفال</h3>
+                    <p>70 ريال</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="img-placeholder">🎨</div>
+                    <h3>ألوان تعليمية</h3>
+                    <p>40 ريال</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* إعدادات عامة */
+body {
+    margin: 0;
+    font-family: "Tahoma", Arial, sans-serif;
+    background: linear-gradient(180deg, #eaf6ff, #ffffff);
+    direction: rtl;
+    color: #333;
+}
+
+/* الهيدر */
+header {
+    background: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* القسم الرئيسي */
+.hero {
+    background: linear-gradient(135deg, #ffd93d, #ff9f1c);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #e85b50;
+}
+
+/* قسم المنتجات */
+.products {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* شبكة المنتجات */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* بطاقة المنتج */
+.product-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+/* صورة مؤقتة */
+.img-placeholder {
+    font-size: 60px;
+    background: #f1f1f1;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* الفوتر */
+footer {
+    background: #4dabf7;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer a {
+    color: white;
+    margin: 0 8px;
+    text-decoration: underline;
+}
